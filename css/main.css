@@ -1,0 +1,41 @@
+html {
+  box-sizing: border-box;
+}
+.wrapper {
+    max-width: 1500px;
+    min-width: 600px;
+    margin: 20px auto;
+    width: 80%; 
+}
+table {
+   
+    border-collapse:collapse;
+    font-size: 16px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+
+table,th,td {
+  border:2px solid black;
+  text-align:center;
+  padding: 20px;
+  } 
+tr:hover {
+  background-color: #ffa;
+}
+th,td {
+    position: relative;
+}
+td:hover::after,
+th:hover::after {
+  content: "";
+  position: absolute;
+  background-color: #ffa;
+  left: 0;
+  top: -5000px;
+  height: 10000px;
+  width: 100%;
+  z-index: -1;
+}
+/* -- --*/
